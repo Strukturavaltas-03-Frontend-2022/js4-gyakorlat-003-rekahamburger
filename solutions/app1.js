@@ -12,8 +12,8 @@
  * @param {string} url a távoli erőforrás címe, ahonnan lekérjük az adatokat
  * @returns {[{}, {}]} objektumok tömbjével tér vissza
  */
-const startFetch = async (url = '') => {
-    const response = await fetch('');
+const startFetch = async (url = '') => { 
+    const response = await fetch(url);
     const data = await response.json();
     return data;
 };
@@ -22,6 +22,6 @@ const startFetch = async (url = '') => {
  * TODO: exportáld ki helyesen a startFetch függvényt!
  * CSAK A 26. SORBAN DOLGOZZ!
  */
-export {
+export   { startFetch,
     
 }
